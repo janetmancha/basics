@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hola</title>
+        <script>
+                function myFunction() {
+                    console.log(document.body.clientWidth);
+                    if (document.body.clientWidth<600) {
+                        document.getElementById("description").style.display="none";
+                    } else {
+                        document.getElementById("description").style.display="block";
+                    }
+                }
+            </script>
+            <style>
+                td {
+                    border: 2px;
+                    border-style: solid;
+                }
+            </style>
+    </head>
+    <body onresize="myFunction()">
+        <table style="width: 100%">
+            <tr>
+                <td>Casa en la playa</td>
+                <td id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus, neque vel placerat gravida, purus nisi pellentesque neque, ac dapibus mi tellus semper tellus. Praesent at elementum leo, ac eleifend sem. Nunc eu odio felis. Integer at imperdiet mauris. Quisque vitae tortor velit</td>
+                <td>100 euros/dia</td>
+            </tr>
+        </table>
+    </body>
+</html>
